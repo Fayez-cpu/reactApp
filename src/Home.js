@@ -27,7 +27,7 @@ useEffect(() => {
 function addItemToCart(object){
   setItemsInCart(prev => [...prev, object])
   
-  let existingItem = Itemsy.find(item => item.name == object.name)
+  let existingItem = Itemsy.find(item => item.name === object.name)
   if (existingItem){
     existingItem.quantity += 1
   }
