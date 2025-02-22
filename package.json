@@ -20,7 +20,7 @@
     "eject": "react-scripts eject",
     "preview:worker": "npm run build && wrangler dev",
     "deploy:worker": "npm run build && wrangler deploy",
-    "build": "CI=false react-scripts build"
+    "build": "ESLINT_NO_DEV_ERRORS=true react-scripts build"
   },
   "eslintConfig": {
     "extends": [
